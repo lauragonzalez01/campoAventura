@@ -13,13 +13,13 @@ export class HomeComponent {
   selectedIndex = 0;
   images = [
     {
-      imageSrc:"../../../../assets/images/image-08.jpg",
+      imageSrc:"../../../../assets/images/image-14.jpg",
     },
     {
-      imageSrc:"../../../../assets/images/image-09.jpg",
+      imageSrc:"../../../../assets/images/image-15.jpg",
     },
     {
-      imageSrc:"../../../../assets/images/image-10.jpg",
+      imageSrc:"../../../../assets/images/image-16.jpg",
     }
   ]
   countDownDate = new Date("octubre 13, 2023 00:00").getTime();

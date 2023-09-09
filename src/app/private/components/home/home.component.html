@@ -1,4 +1,4 @@
-<div *ngIf="images && images.length > 0" class="carouser-container">
+<div *ngIf="images && images.length > 0" class="carouser-container margin-top-img">
     <img *ngFor="let image of images; let i = index" [src]="image.imageSrc"
         [ngClass]="{'image-active': selectedIndex === i}">
     <div *ngIf="indicators" class="carouser-dot-container">
@@ -7,6 +7,8 @@
     </div>
     <div class="btn"></div>
 </div>
+
+
 <div class="background-red text-white size-container-red">
     <div class="title tk-grenadine-mvb ">Aventura significa:</div>
     <div class="text">Pasión · Retos · Servir · Amistad · Compartir · Soñar · Creer</div>
