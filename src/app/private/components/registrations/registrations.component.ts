@@ -12,19 +12,10 @@ export class RegistrationsComponent {
     { id: false, descripcion: 'No' }
   ];
   clanList: any = [
-    { id: true, descripcion: 'Aer (Aire)' },
+    { id: false, descripcion: 'Aer (Aire)' },
     { id: false, descripcion: 'Aqua (Agua)' },
     { id: false, descripcion: 'Ignis (Fuego)' },
     { id: false, descripcion: 'Terra (Tierra)' },
     { id: false, descripcion: 'No recuerdo' },
   ];
-  /*   productForm: FormGroup;
-    
-    constructor(
-      private fb: FormBuilder) {
-      this.productForm = this.fb.group({
-        variedades: this.fb.array([]),
-      }); 
-    }
-  */
 }

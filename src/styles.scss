@@ -63,7 +63,7 @@ header {
 }
 
 .text-gray {
-    color: #4c4c4c;
+    color: #4c4c4c !important;
 }
 
 .text-red {
@@ -183,6 +183,10 @@ header {
     display: flex
 }
 
+.display-contents {
+    display: contents;
+}
+
 .display-table {
     display: table;
 }
@@ -222,15 +226,51 @@ body {
         font-size: 4vw;
     }
 
+    .width-98 {
+        width: 100% !important;
+    }
+
+    .width-95 {
+        width: 100% !important;
+    }
+
+    .width-75 {
+        width: 100% !important;
+    }
+
+    .width-60 {
+        width: 100% !important;
+    }
+
     .width-50 {
         width: 95% !important;
+    }
+
+    .width-49 {
+        width: 100% !important;
+    }
+
+    .width-40 {
+        width: 100% !important;
+    }
+
+    .width-32 {
+        width: 100% !important;
     }
 
     .width-30 {
         width: 95% !important;
     }
 
-    .size-img-team{
+    .width-25 {
+        width: 100% !important;
+    }
+
+    .width-10 {
+        width: 10%;
+    }
+
+    .size-img-team {
         width: 95% !important;
         margin-left: 5% !important;
     }
@@ -305,20 +345,20 @@ body {
         width: 95% !important;
     }
 
-    .text-container-right{
+    .text-container-right {
         width: 95% !important;
         margin: 5% !important;
     }
 
-    .size-img-small{
+    .size-img-small {
         width: 45% !important;
     }
 
-    .display-container{
+    .display-container {
         display: inline-block !important;
     }
 
-    .margin-title{
+    .margin-title {
         margin-left: 5% !important;
     }
 
@@ -333,9 +373,56 @@ body {
         margin: 2% !important;
     }
 
-    .text-footer{
+    .text-footer {
         text-align: center !important;
         font-size: 3vw !important;
         padding: 0% !important;
+    }
+
+    .title-hello {
+        font-size: 10vw !important;
+    }
+
+    .title-form {
+        font-size: 8vw !important;
+    }
+
+    input {
+        font-size: 2.5vw !important;
+    }
+
+    .padding-left {
+        padding-left: 0% !important;
+    }
+
+    .margin-left {
+        margin-left: 0% !important;
+    }
+
+    .mat-mdc-radio-button .mdc-form-field {
+        font-size: 3vw !important;
+        margin: 1vw 2vw !important;
+    }
+
+    .text-question {
+        font-size: 3vw !important;
+        margin: 2vw 0vw 2vw 0vw !important;
+        width: 100% !important;
+        text-align: left !important;
+        display: block !important;
+    }
+
+    .size-span-form {
+        width: 45% !important;
+        font-size: 3vw !important;
+        display: inline-block;
+    }
+
+    .width-img-logo-f {
+        width: 20% !important;
+    }
+
+    .display-table-caption{
+        display: table-caption !important;
     }
 }

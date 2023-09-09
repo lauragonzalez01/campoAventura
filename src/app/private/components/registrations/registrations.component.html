@@ -53,7 +53,7 @@
                     <input class="width-95 input-white" type="text"
                         placeholder="Número de identificación del participante">
                 </div>
-                <div class="width-32 col float-left padding-left text-center">
+                <div class="width-32 col float-left padding-left">
                     <div class="subtitle">Fecha de nacimiento</div>
                     <input class="input-white width-25" type="number" placeholder="Día">
                     <input class="input-white width-25 margin-left" type="number" placeholder="Mes">
@@ -90,9 +90,9 @@
             </mat-radio-group>
             <div class="subtitle width-100">¿Recuerdas el clan en el que fuiste bautizado en Campo Aventura? Si es así,
                 seleccionalo.</div>
-            <div>
+            <div class="display-table-caption">
                 <mat-radio-group>
-                    <mat-radio-button *ngFor="let item of clanList">
+                    <mat-radio-button class="text-gray" *ngFor="let item of clanList">
                         {{item.descripcion}}
                     </mat-radio-button>
                 </mat-radio-group>
@@ -228,54 +228,138 @@
                 placeholder="Escribe aquí la condición médica de importancia">
         </div>
         <div class="subtitle">De las siguentes enfermedades ¿padece o ha padecido alguna?</div>
-        <div class="width-100">
-            <div class="col float-left text-gray-left width-25">
-                Problemas hepatológicos
-            </div>
-            <div>
-                <mat-radio-group>
-                    <mat-radio-button *ngFor="let item of yesNotQuestion">
-                        {{item.descripcion}}
-                    </mat-radio-button>
-                </mat-radio-group>
-            </div>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Problemas hepatológicos</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div><br>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Epilepsia / convulsiones</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div><br>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Asma</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div> <br>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Bronquitis</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div> <br>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Hipoglicemia</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
         </div>
+        <div class="subtitle">De las siguentes items ¿eres alergico a alguno?</div>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Insectos</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+            <span class="text-gray text-question">¿Cúal?</span>
+            <input class="input-white width-32" type="text" placeholder="Escribe aquí el nombre del insecto">
+        </div>
+        <div class="text-gray-left width-100 display-contents">
+            <span class="size-span-form">Medicamentos</span>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+            <span class="text-gray text-question">¿Cúal?</span>
+            <input class="input-white width-32" type="text" placeholder="Escribe aquí el nombre del medicamento">
+        </div>
+        <div class="title text-center title-form">Acompañamiento psicológico</div>
+        <div class="subtitle text-center text-blue margin-botton">(Información confidencial)</div>
+        <div class="text text-gray margin-botton">El tratamiento psicológico o psiquiátrico es información altamente
+            confidencial y solo se compartirá con el representante legal del campo, el psicólogo acompañante y
+            enfermera, con el fin de brindar el cuidado adecuado y el apoyo necesario al participante. La privacidad y
+            la confidencialidad del tratamiento son fundamentales. Aseguramos que esta información no será divulgada a
+            terceros sin el consentimiento explícito del padre/madre/tutor y del propio participante, si
+            es mayor de edad.
+        </div>
+        <div class="subtitle">¿El participante ha sido diagnosticado con alguna condición psicológica
+            y/o psiquiátrica?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿El participante está recibiendo actualmente tratamiento psicológico
+            o psiquiátrico?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
     </div>
     <div class="background-red text-white size-container margin-botton">
         <div class="title text-center title-form">Condiciones a tener en cuenta</div>
         <div class="subtitle">¿Sabes nadar?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Eres sonánbulo?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a la oscuridad?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a los espacios cerrados?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a las alturas?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Tienes alguna restricción de dieta o requerimientos especiales?</div>
         <mat-radio-group>
-            <mat-radio-button *ngFor="let item of yesNotQuestion">
+            <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
                 {{item.descripcion}}
             </mat-radio-button>
         </mat-radio-group>
@@ -286,9 +370,10 @@
     </div>
     <div class="size-container margin-botton text-gray">
         <div class="title text-center">Política de tratamiento de datos</div>
-        <div class="text margin-top text-gray" >
+        <div class="text margin-top text-gray">
+            <input type="radio">
             Acepto recibir notificaciones y novedades de Campo Aventura y autorizo el tratamiento de mis datos
-            personales. <a>Consulta la política aquí.</a>
+            personales. <a class="text-a">Consulta la política aquí.</a>
         </div>
 
         <div class="title-hello letter-board text-center margin-top margin-botton">¡Terminaste!</div>
