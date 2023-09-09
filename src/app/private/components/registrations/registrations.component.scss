@@ -1,0 +1,131 @@
+input {
+    border-radius: 50px;
+    padding: 1vw;
+    margin: 1vw 0vw;
+    font-size: 1.5vw;
+}
+
+::ng-deep.mat-mdc-radio-button .mdc-form-field {
+    margin: 1vw 0vw !important;
+    font-size: 1.5vw;
+    color: #4c4c4c;
+}
+
+::ng-deep.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-hover-icon-color: #1a468e !important;
+    --mdc-radio-selected-pressed-icon-color: #1a468e !important;
+    --mdc-radio-selected-icon-color: #1a468e !important;
+    --mdc-radio-selected-focus-icon-color: #1a468e !important;
+    --mat-radio-checked-ripple-color: #1a468e !important;
+}
+
+::ng-deep.mat-mdc-radio-button .mdc-radio {
+    --mdc-radio-state-layer-size: 3.5vw !important
+}
+
+.size-container {
+    padding: 2% 5% 4% 5%;
+}
+
+.title-hello {
+    font-size: 6vw;
+    font-weight: 900;
+    color: #008e48;
+}
+
+.title-form {
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.input-white {
+    border: 1px solid #4c4c4c;
+    background-color: white;
+}
+
+.input-yellow {
+    border: 1px solid #f7d700;
+    background-color: white;
+}
+
+.text-question {
+    font-weight: 900;
+    text-align: right;
+    font-size: 1.5vw;
+    margin: 2vw 2vw 2vw 5vw;
+}
+
+.text-gray-left {
+    font-size: 1.5vw;
+    margin: 2vw 0vw;
+    color: #4c4c4c;
+    font-weight: 900;
+}
+
+button {
+    border-radius: 30px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.button-red {
+    background-color: white;
+    border: 1px solid #e51d25;
+    color: #e51d25;
+    padding: 1% 1.7%;
+    margin: 4% 0% 0% 0%;
+    font-weight: 700;
+}
+
+.button-white {
+    background-color: white;
+    border: 1px solid #4c4c4c;
+    color: #008e48;
+    padding: 0.5% 5%;
+    margin: 4% 0% 0% 0%;
+    font-weight: 700;
+}
+
+.padding-left {
+    padding-left: 2%;
+}
+
+.margin-left {
+    margin-left: 2%;
+}
+
+.width-98 {
+    width: 98%;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-60 {
+    width: 58%;
+}
+
+.width-49 {
+    width: 49%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-32 {
+    width: 32%;
+}
+
+.width-25 {
+    width: 24%;
+}
+
+.width-10 {
+    width: 10%;
+}

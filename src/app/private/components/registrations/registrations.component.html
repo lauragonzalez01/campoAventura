@@ -1,0 +1,325 @@
+<img src="../../../../assets/images/image-07.png" width="100%">
+<div>
+    <div class="size-container">
+        <div class="title-hello letter-board">¡Hola!</div>
+        <div class="text-gray text font-w-none margin-top margin-botton">
+            <div>
+                Para nosotros es un placer poder contar contigo en nuestro campo de verano y que aprendamos muchas cosas
+                juntos mientras nos divertimos. A continuación encontrarás el formulario que deberás llenar en su
+                totalidad,
+                como preinscripción al campo.
+                <div class="margin-top">Para asegurar tu inscripción deberás realizar tu aporte a travez de los
+                    siguientes
+                    canales.</div>
+            </div>
+            <div class="width-100 margin-top">
+                <div class="width-50 col float-left">
+                    Cuenta de ahorros Bancolombia
+                    <div>Padre Gonzálo Barón Gallo</div>
+                    Nº 944-544029-73
+                </div>
+                <div class="width-50 col float-left">
+                    Nequi
+                    <div>Padre Gonzálo Barón Gallo</div>
+                    320 833 8392
+                </div>
+            </div>
+            <div class="width-100 float-right margin-top">
+                Deberás envíar el comprobante de la consignación o transferencia a los correos:
+                <div>campo.aventuraa@gmail.com</div>
+                gonzobaron@gmail.com
+            </div>
+        </div>
+        <div class="margin-top text-blue">
+            <div class="title text-center title-form">Datos del participante</div>
+            <div class="margin-top subtitle">Nombre completo</div>
+            <input class="input-white width-100" type="text"
+                placeholder="Escribe aquí el nombre completo de la persona a participar">
+            <div class="width-100">
+                <div class="width-40 col float-left">
+                    <div class="subtitle">Identificación</div>
+                    <input class="width-98 input-white" type="number"
+                        placeholder="Número de identificación del participante">
+                </div>
+                <div class="width-60 col float-left padding-left">
+                    <div class="subtitle">Dirección de residencia</div>
+                    <input class="input-white width-100" type="text"
+                        placeholder="Escribe aquí la dirección de tu vivienda">
+                </div>
+            </div>
+            <div class="width-100">
+                <div class="width-32 col float-left">
+                    <div class="subtitle">Ciudad</div>
+                    <input class="width-95 input-white" type="text"
+                        placeholder="Número de identificación del participante">
+                </div>
+                <div class="width-32 col float-left padding-left text-center">
+                    <div class="subtitle">Fecha de nacimiento</div>
+                    <input class="input-white width-25" type="number" placeholder="Día">
+                    <input class="input-white width-25 margin-left" type="number" placeholder="Mes">
+                    <input class="input-white width-25 margin-left" type="number" placeholder="Año">
+                </div>
+                <div class="width-32 col float-left padding-left">
+                    <div class="subtitle">Edad</div>
+                    <input class="input-white width-100" type="number" placeholder="Escribe tu edad">
+                </div>
+            </div>
+            <div class="width-100">
+                <div class="width-49 col float-left">
+                    <div class="subtitle">Colegio o universidad</div>
+                    <input class="width-98 input-white" type="text"
+                        placeholder="Número de identificación del participante">
+                </div>
+                <div class="width-49 col float-left padding-left">
+                    <div class="subtitle">Celular</div>
+                    <input class="input-white width-100" type="number"
+                        placeholder="Escribe aquí la dirección de tu vivienda">
+                </div>
+            </div>
+            <div class="subtitle">Correo electrónico</div>
+            <input class="input-white width-100" type="text"
+                placeholder="Escribe aquí tu dirección de correo electrónico">
+            <div class="subtitle">Nombre completo</div>
+            <input class="input-white width-100" type="text"
+                placeholder="Escribe aquí el nombre de tus canciones favoritas o artistas favoritos">
+            <div class="subtitle">¿Ya has vivido la experiencia de ir a Campo Aventura?</div>
+            <mat-radio-group>
+                <mat-radio-button *ngFor="let item of yesNotQuestion">
+                    {{item.descripcion}}
+                </mat-radio-button>
+            </mat-radio-group>
+            <div class="subtitle width-100">¿Recuerdas el clan en el que fuiste bautizado en Campo Aventura? Si es así,
+                seleccionalo.</div>
+            <div>
+                <mat-radio-group>
+                    <mat-radio-button *ngFor="let item of clanList">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+    <div class="background-yellow text-gray margin-top size-container">
+        <div class="title text-center title-form">Datos familiares</div>
+        <div class="margin-top subtitle">Nombre del papá</div>
+        <input class="input-yellow width-100" type="text" placeholder="Escribe aquí el nombre completo de tu papá">
+        <div class="width-100">
+            <div class="width-40 col float-left">
+                <div class="subtitle">Identificación</div>
+                <input class="width-98 input-yellow" type="number" placeholder="Número de identificación de tu papá">
+            </div>
+            <div class="width-60 col float-left padding-left">
+                <div class="subtitle">Celular</div>
+                <input class="input-yellow width-100" type="number" placeholder="Ingresa su número de celular">
+            </div>
+        </div>
+        <div class="width-100">
+            <div class="width-32 col float-left">
+                <div class="subtitle">Ciudad</div>
+                <input class="input-yellow width-98" type="text" placeholder="Ingresa la ciudad donde vive tu papá">
+            </div>
+            <div class="width-32 col float-left padding-left">
+                <div class="subtitle">Ocupación</div>
+                <input class="input-yellow width-98" type="number" placeholder="Escribe su labor o profesión">
+            </div>
+            <div class="width-32 col float-left padding-left">
+                <div class="subtitle">Dirección de residencia</div>
+                <input class="input-yellow width-98" type="number"
+                    placeholder="Escribe aquí la dirección donde vive tu papá">
+            </div>
+        </div>
+        <div class="margin-top subtitle">Email</div>
+        <input class="input-yellow width-100" type="text" placeholder="Escribe aquí el correo electrónico de tu papá">
+
+        <div class="border-botton-white margin-top"></div>
+
+        <div class="margin-top subtitle">Nombre de la mamá</div>
+        <input class="input-yellow width-100" type="text" placeholder="Escribe aquí el nombre completo de tu mamá">
+        <div class="width-100">
+            <div class="width-40 col float-left">
+                <div class="subtitle">Identificación</div>
+                <input class="width-98 input-yellow" type="number" placeholder="Número de identificación de tu mamá">
+            </div>
+            <div class="width-60 col float-left padding-left">
+                <div class="subtitle">Celular</div>
+                <input class="input-yellow width-100" type="number" placeholder="Ingresa su número de celular">
+            </div>
+        </div>
+        <div class="width-100">
+            <div class="width-32 col float-left">
+                <div class="subtitle">Ciudad</div>
+                <input class="input-yellow width-98" type="text" placeholder="Ingresa la ciudad donde vive tu mamá">
+            </div>
+            <div class="width-32 col float-left padding-left">
+                <div class="subtitle">Ocupación</div>
+                <input class="input-yellow width-98" type="number" placeholder="Escribe su labor o profesión">
+            </div>
+            <div class="width-32 col float-left padding-left">
+                <div class="subtitle">Dirección de residencia</div>
+                <input class="input-yellow width-98" type="number"
+                    placeholder="Escribe aquí la dirección donde vive tu mamá">
+            </div>
+        </div>
+        <div class="margin-top subtitle">Email</div>
+        <input class="input-yellow width-100" type="text" placeholder="Escribe aquí el correo electrónico de tu mamá">
+    </div>
+    <div class="text-blue size-container margin-botton">
+        <div class="title text-center margin-botton title-form">Datos médicos del participante</div>
+        <div class="width-100">
+            <div class="width-49 col float-left">
+                <div class="subtitle">Compañia aseguradora</div>
+                <input class="width-98 input-white" type="text"
+                    placeholder="Escribe aquí el nombre de tu compañía aseguradora">
+            </div>
+            <div class="width-49 col float-left padding-left">
+                <div class="subtitle">EPS</div>
+                <input class="input-white width-100" type="text" placeholder="Escribe aquí el nombre de tu EPS">
+            </div>
+        </div>
+        <div class="subtitle">Medicamentos</div>
+        <br><br><br><br><br><br>
+        <div class="subtitle">¿Has tenido alguna intervención quirúrgica?</div>
+        <div class="width-100">
+            <div class="col float-left">
+                <mat-radio-group text-question>
+                    <mat-radio-button *ngFor="let item of yesNotQuestion">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col float-left text-gray text-question">¿Cúal?</div>
+            <input class="input-white width-50" type="text" placeholder="Escribe aquí la intervención quirúrgica">
+        </div>
+        <div class="subtitle">¿Tienes o has desarrollado alguna enfermedad respiratoria aguda?</div>
+        <div class="width-100">
+            <div class="col float-left">
+                <mat-radio-group text-question>
+                    <mat-radio-button *ngFor="let item of yesNotQuestion">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col float-left text-gray text-question">¿Cúal?</div>
+            <input class="input-white width-50" type="text" placeholder="Escribe aquí la enfermedad respiratoria aguda">
+        </div>
+        <div class="subtitle">¿Has sufrido lesiones óseas o musculares?</div>
+        <div class="width-100">
+            <div class="col float-left">
+                <mat-radio-group text-question>
+                    <mat-radio-button *ngFor="let item of yesNotQuestion">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col float-left text-gray text-question">¿Cúal?</div>
+            <input class="input-white width-50" type="text" placeholder="Escribe aquí las lesiones óseas o musculares">
+        </div>
+        <div class="subtitle">¿Has desarrollado o sufrido de otra condición médica de importancia?</div>
+        <div class="width-100">
+            <div class="col float-left">
+                <mat-radio-group text-question>
+                    <mat-radio-button *ngFor="let item of yesNotQuestion">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col float-left text-gray text-question">¿Cúal?</div>
+            <input class="input-white width-50" type="text"
+                placeholder="Escribe aquí la condición médica de importancia">
+        </div>
+        <div class="subtitle">De las siguentes enfermedades ¿padece o ha padecido alguna?</div>
+        <div class="width-100">
+            <div class="col float-left text-gray-left width-25">
+                Problemas hepatológicos
+            </div>
+            <div>
+                <mat-radio-group>
+                    <mat-radio-button *ngFor="let item of yesNotQuestion">
+                        {{item.descripcion}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+    <div class="background-red text-white size-container margin-botton">
+        <div class="title text-center title-form">Condiciones a tener en cuenta</div>
+        <div class="subtitle">¿Sabes nadar?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿Eres sonánbulo?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿Le temes a la oscuridad?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿Le temes a los espacios cerrados?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿Le temes a las alturas?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">¿Tienes alguna restricción de dieta o requerimientos especiales?</div>
+        <mat-radio-group>
+            <mat-radio-button *ngFor="let item of yesNotQuestion">
+                {{item.descripcion}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div class="subtitle">Si tu respuesta es si, por favor adjunte el soporte médico</div>
+        <div class="text-center margin-botton">
+            <button class="button-red">Sube tu documento aquí</button>
+        </div>
+    </div>
+    <div class="size-container margin-botton text-gray">
+        <div class="title text-center">Política de tratamiento de datos</div>
+        <div class="text margin-top text-gray" >
+            Acepto recibir notificaciones y novedades de Campo Aventura y autorizo el tratamiento de mis datos
+            personales. <a>Consulta la política aquí.</a>
+        </div>
+
+        <div class="title-hello letter-board text-center margin-top margin-botton">¡Terminaste!</div>
+        <div class="text-gray text font-w-none margin-top margin-botton">
+            <div>
+                Recuerda que este formulario es un registro de la preinscripción al campo.
+                <div class="margin-top">Para asegurar tu inscripción deberás realizar tu aporte a travez de los
+                    siguientes
+                    canales.</div>
+            </div>
+            <div class="width-100 margin-top">
+                <div class="width-50 col float-left">
+                    Cuenta de ahorros Bancolombia
+                    <div>Padre Gonzálo Barón Gallo</div>
+                    Nº 944-544029-73
+                </div>
+                <div class="width-50 col float-left">
+                    Nequi
+                    <div>Padre Gonzálo Barón Gallo</div>
+                    320 833 8392
+                </div>
+            </div>
+            <div class="width-100 float-right margin-top">
+                Deberás envíar el comprobante de la consignación o transferencia a los correos:
+                <div>campo.aventuraa@gmail.com</div>
+                gonzobaron@gmail.com
+            </div>
+        </div>
+        <div class="text-center margin-botton">
+            <button class="button-white">Enviar el formulario</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,36 @@
+.width-30 {
+    width: 30%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.padding-col {
+    padding: 2%;
+}
+
+.footer {
+    width: 96%;
+    padding: 1% 2%;
+    color: white;
+    background-color: #383838;
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1% 0%;
+    overflow: hidden;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}

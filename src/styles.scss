@@ -1,0 +1,207 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$campoAventura-primary: mat.define-palette(mat.$indigo-palette);
+$campoAventura-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$campoAventura-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$campoAventura-theme: mat.define-light-theme((color: (primary: $campoAventura-primary,
+                accent: $campoAventura-accent,
+                warn: $campoAventura-warn,
+            )));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($campoAventura-theme);
+
+html {
+    font-family: 'GothamBook', sans-serif;
+    background-image: url('./assets/icons/icon-0.png');
+}
+
+.tk-grenadine-mvb {
+    font-family: "grenadine-mvb", sans-serif;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin: -1% 0% 0% 0%;
+}
+
+.title {
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+
+.subtitle {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 2vw;
+}
+
+.text-gray {
+    color: #4c4c4c;
+}
+
+.text-red {
+    color: #e51d25;
+    ;
+}
+
+.text-green {
+    color: #008e48;
+}
+
+.text-blue {
+    color: #1a468e;
+}
+
+.text-white {
+    color: white;
+}
+
+.background-red {
+    background-color: #e51d25;
+}
+
+.background-green {
+    background-color: #008e48;
+}
+
+.background-blue {
+    background-color: #1a468e;
+}
+
+.background-yellow {
+    background-color: #f7d700;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.background-gray {
+    background-color: #4c4c4c;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-botton {
+    margin-bottom: 3%;
+}
+
+.margin-top {
+    margin-top: 3%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.font-w-bold {
+    font-weight: 900;
+}
+
+.font-w-none {
+    font-weight: 100;
+}
+
+.border-botton-red {
+    border-bottom: 5px dotted #e51d25;
+}
+
+.border-botton-gray {
+    border-bottom: 5px dotted #4c4c4c;
+}
+
+.border-botton-green {
+    border-bottom: 5px dotted #008e48;
+}
+
+.border-botton-blue {
+    border-bottom: 5px dotted #1a468e;
+}
+
+.border-botton-white {
+    border-bottom: 5px dotted white;
+}
+
+.display-flex {
+    display: flex
+}
+
+.display-table {
+    display: table;
+}
+
+.cursive-text {
+    font-style: italic;
+}
+
+.letter-board {
+    letter-spacing: -0.2vw;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+

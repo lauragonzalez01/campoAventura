@@ -1,0 +1,75 @@
+<div *ngIf="images && images.length > 0" class="carouser-container">
+    <img *ngFor="let image of images; let i = index" [src]="image.imageSrc"
+        [ngClass]="{'image-active': selectedIndex === i}">
+    <div *ngIf="indicators" class="carouser-dot-container">
+        <span *ngFor="let dot of images; let i = index" class="dot" [ngClass]="{'active': selectedIndex === i}"
+            (click)="selectedImage(i)"></span>
+    </div>
+    <div class="btn"></div>
+</div>
+<div class="background-red text-white size-container-red">
+    <div class="title tk-grenadine-mvb ">Aventura significa:</div>
+    <div class="text">Pasión · Retos · Servir · Amistad · Compartir · Soñar · Creer</div>
+    <img class="p-relative float-right margin-icon" src="../../../../assets/icons/icon-04.png" width="6%">
+</div>
+<div class="width-100 margin-botton">
+    <div class="col float-left width-50 text-center">
+        <img class="p-relative" src="../../../../assets/images/image-00.png" width="70%">
+    </div>
+    <div class="col float-left width-50 p-relative text-gray">
+        <div class="title margin-botton">Temporada Young</div>
+        <div class="background-white size-card">
+            <img class="size-icon col float-left" src="../../../../assets/icons/icon-05.png">
+            <div class="col float-left size-card-content">
+                <div class="subtitle">Fecha</div>
+                <div class="text">13 al 16 de octubre de 2023</div>
+            </div>
+        </div>
+        <div class="background-white size-card">
+            <img class="size-icon col float-left" src="../../../../assets/icons/icon-06.png">
+            <div class="col float-left size-card-content">
+                <div class="subtitle">Edades</div>
+                <div class="text">13 a 17 años</div>
+            </div>
+        </div>
+        <div class="background-white size-card">
+            <img class="size-icon2 col float-left" src="../../../../assets/icons/icon-07.png">
+            <div class="col float-left size-card-content">
+                <div class="subtitle">Lugar</div>
+                <div class="text">Solnok | Barbosa - Santander</div>
+            </div>
+        </div>
+        <div class="background-white size-card">
+            <img class="size-icon2 col float-left" src="../../../../assets/icons/icon-08.png">
+            <div class="col float-left size-card-content">
+                <div class="subtitle">Aporte</div>
+                <div class="text">$440.000</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="width-100 float-right title text-center margin-top margin-botton">
+    <div class="text-green">10% DE DESCUENTO</div>
+    <div class="text-gray font-w-none">inscribiéndote antes del<span class="size-span font-w-bold">17 de
+            septiembre</span></div>
+</div>
+<div class="text-center margin-botton">
+    <button class="button-yellow" [routerLink]="['/inscripciones']">¡Inscríbete ahora!</button>
+    <button class="button-green" [routerLink]="['/campo']">Conoce más</button>
+</div>
+<div class="background-blue text-white margin-botton title width-100">
+    <img class="icon-line-left" src="../../../../assets/icons/icon-09.png">
+    <div class="text-center title letter-board">CUENTA REGRESIVA</div>
+    <img class="icon-line-right" src="../../../../assets/icons/icon-10.png">
+    <div class="width-100 row countdown-size text-center">
+        <div class="col countdown title">{{days}} <span class="countdown-text">Días</span></div>
+        <div class="col countdown title">{{hours}} <span class="countdown-text">Horas</span></div>
+        <div class="col countdown title">{{minutes}} <span class="countdown-text">Minutos</span></div>
+        <div class="col countdown title">{{seconds}} <span class="countdown-text">Segundos</span></div>
+    </div>
+</div>
+<div class="title text-red margin-botton text-center letter-board">Y ¿QUÉ ES CAMPO AVENTURA?</div>
+<div class="text-center margin-botton">
+    <iframe class="iframe-content" height="400"
+        src="https://www.youtube.com/embed/5zffuHTwQp4?si=xG4WitTrbgisVWVN"></iframe>
+</div>

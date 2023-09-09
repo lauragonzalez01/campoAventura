@@ -1,0 +1,36 @@
+.size-text-container {
+    padding: 5%;
+    margin-top: -2%;
+}
+
+.text-container-right {
+    width: 86%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.line-text {
+    line-height: 2vw;
+}
+
+.padding-title {
+    padding: 2% 0%;
+}
+
+.padding-container{
+    padding: 3% 0%;
+}
+
+.border-right-dotted {
+    border-right: 5px dotted #1a468e;
+    width: 49%;
+}
+
+.size-card-small {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #4c4c4c;
+    padding: 1%;
+    margin-bottom: 3%;
+    display: inline-block;
+}

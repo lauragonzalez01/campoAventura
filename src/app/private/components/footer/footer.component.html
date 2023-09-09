@@ -1,0 +1,16 @@
+<div class="footer">
+    <div class="width-30 col float-left text-center">
+        <br><img class="width-25" src="../../../../assets/icons/icon-01.png">
+    </div>
+    <div class="width-30 col float-left padding-col">
+        <ul routerLinkActive="active">
+            <li *ngFor="let item of links; let i = index">
+                <a [routerLink]="[item.routerLink]">{{item.description}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="width-30 col float-left padding-col">
+        <div>Pbx: +57 601 00 00</div>
+        <div>Email: campoaventuraa@gmail.com</div>
+    </div>
+</div>
