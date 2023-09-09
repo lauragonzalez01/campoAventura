@@ -205,3 +205,137 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .iframe-content {
+        width: 95% !important;
+    }
+
+    .title {
+        font-size: 7vw;
+    }
+
+    .subtitle {
+        font-size: 4vw;
+    }
+
+    .text {
+        font-size: 4vw;
+    }
+
+    .width-50 {
+        width: 95% !important;
+    }
+
+    .width-30 {
+        width: 95% !important;
+    }
+
+    .size-img-team{
+        width: 95% !important;
+        margin-left: 5% !important;
+    }
+
+    li a {
+        font-size: 3vw !important;
+        padding: 3vw 7vw !important
+    }
+
+    .img-logo-menu {
+        width: 60% !important;
+        padding: 1vw 5vw !important;
+    }
+
+    .countdown-size {
+        display: inline-grid !important;
+        justify-content: center;
+    }
+
+    .countdown {
+        margin: 5% !important;
+        width: 100% !important;
+    }
+
+    .countdown-text {
+        font-size: 4vw !important;
+    }
+
+    .icon-line-left {
+        width: 50% !important;
+        margin: 3.5% 0% 0% 1% !important;
+    }
+
+    .icon-line-right {
+        width: 18% !important;
+        margin: -6% 0% 0% 81% !important;
+    }
+
+    .size-card {
+        width: 90% !important;
+    }
+
+    .size-container-young {
+        width: 90% !important;
+        margin: 5% 8% !important;
+    }
+
+    .img-young {
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+
+    button {
+        font-size: 4vw !important;
+    }
+
+    .line-text {
+        line-height: 4.5vw !important;
+    }
+
+    .carouser-container img.image-active {
+        height: 60vw !important;
+    }
+
+    .margin-image-1 {
+        margin: 2% 5% 5% !important;
+        width: 95% !important;
+    }
+
+    .margin-image-2 {
+        margin: 2% 5% 5% !important;
+        width: 95% !important;
+    }
+
+    .text-container-right{
+        width: 95% !important;
+        margin: 5% !important;
+    }
+
+    .size-img-small{
+        width: 45% !important;
+    }
+
+    .display-container{
+        display: inline-block !important;
+    }
+
+    .margin-title{
+        margin-left: 5% !important;
+    }
+
+    .cursive-text {
+        margin-bottom: 5% !important;
+    }
+
+    .border-right-dotted {
+        width: 95% !important;
+        border-bottom: 5px dotted #1a468e !important;
+        border-right: none !important;
+        margin: 2% !important;
+    }
+
+    .text-footer{
+        text-align: center !important;
+        font-size: 3vw !important;
+        padding: 0% !important;
+    }
+}

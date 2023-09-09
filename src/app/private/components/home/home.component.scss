@@ -56,6 +56,15 @@
     margin: -8% 0% 0% 0%;
 }
 
+.img-young{
+    width: 65%;
+}
+
+.size-container-young{
+    width: 50%;
+    position: relative;
+}
+
 .size-card {
     width: 67%;
     border-radius: 10px;
@@ -108,7 +117,6 @@ button {
 
 .iframe-content {
     width: 60%;
-  //  height: 100% !important;
     border-radius: 30px;
     border: none;
     box-shadow: 0 2px 5px #4c4c4c;
@@ -144,4 +152,5 @@ button {
     display: block;
     font-weight: 100;
     font-size: 1.5vw;
+    margin-bottom: 10%;
 }
