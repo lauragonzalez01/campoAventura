@@ -151,6 +151,10 @@ header {
     width: 50%;
 }
 
+.width-23 {
+    width: 23%;
+}
+
 .font-w-bold {
     font-weight: 900;
 }
@@ -264,6 +268,10 @@ body {
 
     .width-25 {
         width: 100% !important;
+    }
+
+    .width-23 {
+        width: 70% !important;
     }
 
     .width-10 {
@@ -404,6 +412,11 @@ body {
         margin: 1vw 2vw !important;
     }
 
+    .radio-color-white {
+        font-size: 3vw !important;
+        margin: 1vw 2vw !important;
+    }
+
     .text-question {
         font-size: 3vw !important;
         margin: 2vw 0vw 2vw 0vw !important;
@@ -422,7 +435,26 @@ body {
         width: 20% !important;
     }
 
-    .display-table-caption{
+    .display-table-caption {
         display: table-caption !important;
     }
+
+    .text-dialog{
+        font-size: 2.7vw !important;
+    }
+
+    .title-dialog{
+        padding: 5%;
+        font-size: 4vw !important;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
