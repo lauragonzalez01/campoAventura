@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDialogModule } from '@angular/material/dialog'
+import { MatButtonModule } from '@angular/material/button'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './private/components/home/home.component';
@@ -13,10 +17,8 @@ import { GalleryComponent } from './private/components/gallery/gallery.component
 import { FAQComponent } from './private/components/faq/faq.component';
 import { RegistrationsComponent } from './private/components/registrations/registrations.component';
 import { MenuComponent } from './private/components/menu/menu.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { MatRadioModule } from '@angular/material/radio';
 import { FooterComponent } from './private/components/footer/footer.component';
+import { ConfirmPoliciesDialogComponent } from './private/components/registrations/confirm-policies-dialog/confirm-policies-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { FooterComponent } from './private/components/footer/footer.component';
     FAQComponent,
     RegistrationsComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    ConfirmPoliciesDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,8 @@ import { FooterComponent } from './private/components/footer/footer.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatRadioModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

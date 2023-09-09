@@ -92,7 +92,7 @@
                 seleccionalo.</div>
             <div class="display-table-caption">
                 <mat-radio-group>
-                    <mat-radio-button id="clan" class="radio-color-red" *ngFor="let item of clanList">
+                    <mat-radio-button *ngFor="let item of clanList">
                         {{item.descripcion}}
                     </mat-radio-button>
                 </mat-radio-group>
@@ -330,37 +330,49 @@
         <div class="subtitle">¿Sabes nadar?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Eres sonánbulo?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a la oscuridad?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a los espacios cerrados?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Le temes a las alturas?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">¿Tienes alguna restricción de dieta o requerimientos especiales?</div>
         <mat-radio-group>
             <mat-radio-button class="text-white-radio" *ngFor="let item of yesNotQuestion">
-                {{item.descripcion}}
+                <label class="radio-color-white">
+                    {{item.descripcion}}
+                </label>
             </mat-radio-button>
         </mat-radio-group>
         <div class="subtitle">Si tu respuesta es si, por favor adjunte el soporte médico</div>
@@ -373,7 +385,7 @@
         <div class="text margin-top text-gray">
             <input type="radio">
             Acepto recibir notificaciones y novedades de Campo Aventura y autorizo el tratamiento de mis datos
-            personales. <a class="text-a">Consulta la política aquí.</a>
+            personales. <a (click)="openDialog()" class="text-a">Consulta la política aquí.</a>
         </div>
 
         <div class="title-hello letter-board text-center margin-top margin-botton">¡Terminaste!</div>
@@ -406,5 +418,4 @@
             <button class="button-white">Enviar el formulario</button>
         </div>
     </div>
-
 </div>
