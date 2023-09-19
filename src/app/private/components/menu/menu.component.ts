@@ -14,8 +14,8 @@ export class MenuComponent {
     { id: 4, name: 'Temporadas', routerLink: 'temporadas' },
     { id: 5, name: 'Un campo seguro', routerLink: 'campo-seguro' },
     { id: 6, name: 'Galeria', routerLink: 'galeria' },
-    { id: 7, name: 'FAQ', routerLink: 'FAQ' }, */
-    { id: 8, name: 'Inscripciones', routerLink: 'inscripciones' }
+    { id: 7, name: 'FAQ', routerLink: 'FAQ' }, 
+    { id: 8, name: 'Inscripciones', routerLink: 'inscripciones' }*/
   ];
 
 
